@@ -147,8 +147,12 @@ The program culminates in the integration of a complete BGR circuit. You will si
 <img width="1321" height="744" alt="image" src="https://github.com/user-attachments/assets/45b4bd6f-b38d-4f53-9b47-df7674f0c438" />
 
 <img width="1323" height="747" alt="image" src="https://github.com/user-attachments/assets/b1c0e4de-3288-4a5b-ae6a-57a03e2103e9" />
+&nbsp;
+
 
 Setup of wsl
+
+will be documented!!
 
 ctat_voltage_gen.sp spice file
 
@@ -188,6 +192,41 @@ plot result
 <img width="1137" height="748" alt="image" src="https://github.com/user-attachments/assets/741347ac-6e7c-4956-9712-a497049bca6b" />
 
 
+slope:
+
+<img width="622" height="115" alt="image" src="https://github.com/user-attachments/assets/8b8ea151-3836-4772-b885-4c81d4795364" />
+
+CTAT Voltage generation with different current source values
+
+``` spice
+*CTAT_ckt Voltage generation with different current source values
+.lib /home/mimo3000n/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice ss
+vdd     d        0          1.8
+I0      d        ctat_op    10u
+xpq1    0        0          ctat_op   sky130_fd_pr__pnp_05v5_W3p40L3p40   m=8
+.dc     temp    -40         125       5      I0    1u    10u      1u
+.control
+run
+plot v(ctat_op)
+.endc
+.end
+
+```
+
+simulation with ngspice:
+
+<img width="775" height="522" alt="image" src="https://github.com/user-attachments/assets/a46b757e-6d4f-423d-b677-333f2524c40e" />
+
+plot results:
+
+<img width="1228" height="855" alt="image" src="https://github.com/user-attachments/assets/613500f8-4ba6-4539-ae66-17235c999417" />
+
+<img width="1218" height="759" alt="image" src="https://github.com/user-attachments/assets/32a6d3c0-47b4-4176-94de-b23f12b7af80" />
+
+
+
+
+
 
 
 
@@ -195,6 +234,13 @@ plot result
 
 ###	PTAT design and prelayout simulation
 &nbsp;
+
+next we do simulation on following ciruit.
+
+<img width="880" height="499" alt="image" src="https://github.com/user-attachments/assets/16eaffaf-cdfc-4ecc-8f57-75842756158b" />
+
+
+
 
 ###	BGR (ideal) design and prelayout simulation
 &nbsp;
