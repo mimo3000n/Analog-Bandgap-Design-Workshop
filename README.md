@@ -292,6 +292,47 @@ plot results:
 <img width="1218" height="759" alt="image" src="https://github.com/user-attachments/assets/32a6d3c0-47b4-4176-94de-b23f12b7af80" />
 
 
+plot v(qp1) & v(ra1) and see that there is no difference alsoslop is the same
+
+ngspice command: plot v(qp1) v(ra1)
+
+<img width="411" height="57" alt="image" src="https://github.com/user-attachments/assets/baf87960-f011-4f18-8c39-03b196b4503b" />
+
+plot result: 
+
+<img width="1169" height="819" alt="image" src="https://github.com/user-attachments/assets/ee67f335-be0b-4ed6-bca8-c04c95bff6a7" />
+
+now we run "plot v(qp2) v(ra1)
+
+<img width="325" height="56" alt="image" src="https://github.com/user-attachments/assets/8aec85ca-8d97-4e8f-bc96-e682b10599b1" />
+
+plot result:
+
+<img width="1300" height="855" alt="image" src="https://github.com/user-attachments/assets/036a6719-b6bc-4c45-9efb-f7b6c458a409" />
+
+now let add difference between v(ra1)-v(qp2)
+
+<img width="510" height="44" alt="image" src="https://github.com/user-attachments/assets/85ef64dd-2336-41bb-b377-894ad67ebe62" />
+
+plot result:
+
+<img width="1295" height="847" alt="image" src="https://github.com/user-attachments/assets/65c9c63b-57b8-4785-af9b-2ba3c75d5c5e" />
+
+
+meassure the slope on v(ra1)-v(qp2)
+
+plot result:
+
+<img width="1524" height="993" alt="image" src="https://github.com/user-attachments/assets/afd4a21a-ebe9-479a-a04b-18585f7186c0" />
+
+
+<img width="575" height="95" alt="image" src="https://github.com/user-attachments/assets/2477f686-c514-487a-88cf-dd843c8e16f3" />
+
+
+
+
+
+
 
 
 ###	BGR (ideal) design and prelayout simulation
