@@ -639,9 +639,28 @@ load "resbank.mag"
 
 <img width="1020" height="1345" alt="image" src="https://github.com/user-attachments/assets/31f5d5ee-1351-452a-b88d-4d0550f8408f" />
 
+pfets:
+
+<img width="2572" height="1106" alt="image" src="https://github.com/user-attachments/assets/fcc5fd02-cdf0-4002-a928-a7e8f04480c1" />
+
+nfets:
+
+<img width="2580" height="1108" alt="image" src="https://github.com/user-attachments/assets/876d007e-b3e4-4584-957c-faed931611c7" />
+
+pnp10:
+
+<img width="2582" height="1119" alt="image" src="https://github.com/user-attachments/assets/a4edc024-86ce-4352-b66e-373cd69e476a" />
+
+
+
+
 
 ###	top-level layout extraction lvs postlayout simulation Final
 &nbsp;
+
+combine all mag files
+
+<img width="764" height="1041" alt="image" src="https://github.com/user-attachments/assets/25f4f3fc-8424-4cc0-8fef-6fcd34ac9d62" />
 
 
 plot results:
