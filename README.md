@@ -319,7 +319,7 @@ plot result:
 <img width="1295" height="847" alt="image" src="https://github.com/user-attachments/assets/65c9c63b-57b8-4785-af9b-2ba3c75d5c5e" />
 
 
-meassure the slope on v(ra1)-v(qp2)
+meassure the slope of v(ra1)-v(qp2)
 
 plot result:
 
@@ -328,15 +328,118 @@ plot result:
 
 <img width="575" height="95" alt="image" src="https://github.com/user-attachments/assets/2477f686-c514-487a-88cf-dd843c8e16f3" />
 
+now we check the current
 
+ngspice command: plot vid1#branch vid2#branch
 
+<img width="335" height="50" alt="image" src="https://github.com/user-attachments/assets/07f28e88-e8d4-4f44-bbe6-5784b6137a4c" />
 
+plot result:
 
-
+<img width="1223" height="938" alt="image" src="https://github.com/user-attachments/assets/484c01dc-b80c-4291-a099-8f07d53a1f58" />
 
 
 ###	BGR (ideal) design and prelayout simulation
 &nbsp;
+
+next we simulate below circuit
+
+<img width="1119" height="732" alt="image" src="https://github.com/user-attachments/assets/8ed686a9-4c21-4c08-958f-c2c1549fbd47" />
+
+
+netlist look like this:
+
+``` spice
+
+**** bgr using ideal opamp (vcvs) *****
+
+.lib "/home/mimo3000n/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt"
+
+.global vdd gnd
+.temp 27
+
+*** vcvs definition
+e1 net2 gnd ra1 qp1 gain=1000
+
+
+xmp1    qp1     net2    vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
+xmp2    ra1     net2    vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
+xmp3    ref     net2    vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
+
+*** bjt definition
+xqp1    gnd     gnd     qp1             sky130_fd_pr__pnp_05v5_W3p40L3p40       m=1
+xqp2    gnd     gnd     qp2          sky130_fd_pr__pnp_05v5_W3p40L3p40       m=8
+xqp3    gnd     gnd     qp3          sky130_fd_pr__pnp_05v5_W3p40L3p40       m=1
+
+*** high-poly resistance definition
+xra1    ra1     na1     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xra2    na1     na2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xra3    na2     qp2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xra4    na2     qp2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+
+xrb1    ref     nb1     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb2    nb1     nb2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb3    nb2     nb3     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb4    nb3     nb4     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb5    nb4     nb5     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb6    nb5     nb6     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb7    nb6     nb7     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb8    nb7     nb8     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb9    nb8     nb9     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb10   nb9     nb10    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb11   nb10    nb11    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb12   nb11    nb12    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb13   nb12    nb13    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb14   nb13    nb14    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb15   nb14    nb15    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb16   nb15    nb16    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb17   nb16    nb17    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb18   nb17    nb18    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb19   nb18    nb19    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb20   nb19    nb20    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41        l=7.8
+xrb21   nb20    nb21    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb22   nb21    nb22    vdd     sky130_fd_pr__res_high_po_1p41     w=1.41        l=7.8
+xrb23   nb22    qp3     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xrb24   nb22    qp3     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+
+*** voltage source for current measurement
+
+*** supply voltage
+vsup    vdd     gnd     dc      2
+*.dc    vsup    0       3.3     0.3.3
+
+.dc     temp    -40     125     5
+
+*vsup    vdd     gnd     pulse   0       2       10n     1u      1u      1m      100u
+*.tran   5n      10u
+
+.control
+RUN
+plot v(vdd) v(qp1) v(ra1) v(qp2) v(ref) v(qp3)
+plot v(ref)
+
+
+.endc
+.end
+```
+
+run simulation with ngspice:
+
+<img width="804" height="520" alt="image" src="https://github.com/user-attachments/assets/1bd61297-97ff-4cc5-bd2b-abbeefd0a95e" />
+
+
+plot results:
+
+<img width="1208" height="774" alt="image" src="https://github.com/user-attachments/assets/eaa7bb01-71cb-4ac7-8ca7-4645d849c5da" />
+
+
+<img width="1370" height="886" alt="image" src="https://github.com/user-attachments/assets/029849cd-3be3-4edd-a4ca-5ec7731aa84f" />
+
+
+
+
+
+
 
 ###	Complete BGR design and prelayout simulation
 &nbsp;
