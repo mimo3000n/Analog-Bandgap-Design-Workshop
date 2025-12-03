@@ -222,8 +222,6 @@ plot result:
 <img width="1277" height="956" alt="image" src="https://github.com/user-attachments/assets/e02be5cc-3c57-4998-bafd-218b8ac0a6a0" />
 
 
-<img width="1277" height="956" alt="image" src="https://github.com/user-attachments/assets/66c5af14-9a1d-4c0e-bdb6-d7341e025c2b" />
-
 
 
 
