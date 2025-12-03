@@ -148,6 +148,47 @@ The program culminates in the integration of a complete BGR circuit. You will si
 
 <img width="1323" height="747" alt="image" src="https://github.com/user-attachments/assets/b1c0e4de-3288-4a5b-ae6a-57a03e2103e9" />
 
+Setup of wsl
+
+ctat_voltage_gen.sp spice file
+
+``` spice
+*CTAT Voltage generation with single BJT
+
+.lib /home/mimo3000n/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.global vdd gnd
+.temp 27
+
+**** bjt definition
+xqp1    gnd     gnd     qp1     sky130_fd_pr__pnp_05v5_W3p40L3p40       m=1
+
+*** supply voltage and current
+vsup    vdd     gnd     dc      2
+isup    vdd     qp1     dc      10u
+.dc     temp    -40         125       5
+
+*** control statement
+.control
+run
+plot v(qp1)
+.endc
+.end
+
+```
+
+runing spice simulation with following command:
+
+ngspice ctat_voltage_gen.sp
+
+<img width="792" height="502" alt="image" src="https://github.com/user-attachments/assets/6976cefe-d87b-4e59-979e-f6f49370966c" />
+
+plot result
+
+<img width="1137" height="748" alt="image" src="https://github.com/user-attachments/assets/741347ac-6e7c-4956-9712-a497049bca6b" />
+
+
+
 
 
 
