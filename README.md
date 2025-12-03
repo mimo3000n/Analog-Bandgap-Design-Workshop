@@ -629,6 +629,17 @@ plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 ###	Layout of the components
 &nbsp;
 
+transfer mag files into work-directory
+
+run magic with following command from work-directory:
+
+magic -T /home/mimo3000n/share/pdk/sky130A/libs.tech/magic/sky130A.tech
+
+load "resbank.mag"
+
+<img width="1020" height="1345" alt="image" src="https://github.com/user-attachments/assets/31f5d5ee-1351-452a-b88d-4d0550f8408f" />
+
+
 ###	top-level layout extraction lvs postlayout simulation Final
 &nbsp;
 
