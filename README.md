@@ -215,13 +215,16 @@ plot v(ctat_op)
 
 simulation with ngspice:
 
-<img width="775" height="522" alt="image" src="https://github.com/user-attachments/assets/a46b757e-6d4f-423d-b677-333f2524c40e" />
+<img width="781" height="483" alt="image" src="https://github.com/user-attachments/assets/aa25a86f-4b6c-424f-b8ae-7271c7d54795" />
 
-plot results:
+plot result:
 
-<img width="1228" height="855" alt="image" src="https://github.com/user-attachments/assets/613500f8-4ba6-4539-ae66-17235c999417" />
+<img width="1277" height="956" alt="image" src="https://github.com/user-attachments/assets/e02be5cc-3c57-4998-bafd-218b8ac0a6a0" />
 
-<img width="1218" height="759" alt="image" src="https://github.com/user-attachments/assets/32a6d3c0-47b4-4176-94de-b23f12b7af80" />
+
+<img width="1277" height="956" alt="image" src="https://github.com/user-attachments/assets/66c5af14-9a1d-4c0e-bdb6-d7341e025c2b" />
+
+
 
 
 
@@ -238,6 +241,57 @@ plot results:
 next we do simulation on following ciruit.
 
 <img width="880" height="499" alt="image" src="https://github.com/user-attachments/assets/16eaffaf-cdfc-4ecc-8f57-75842756158b" />
+
+``` spice
+**** ptat voltage generation circuit *****
+
+.lib "/home/mimo3000n/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt"
+
+.global vdd gnd
+.temp 27
+
+*** vcvs definition
+e1      net2    gnd     ra1     qp1     gain=1000
+xmp1    q1      net2    vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
+xmp2    q2      net2    vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
+
+*** bjt definition
+xqp1    gnd     gnd     qp1             sky130_fd_pr__pnp_05v5_W3p40L3p40       m=1
+xqp2    gnd     gnd     qp2          sky130_fd_pr__pnp_05v5_W3p40L3p40       m=8
+
+*** high-poly resistance definition
+xra1    ra1     na1     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xra2    na1     na2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xra3    na2     qp2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+xra4    na2     qp2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41       l=7.8
+
+*** voltage sources for current measurement
+vid1    q1      qp1     dc      0
+vid2    q2      ra1     dc      0
+
+*** supply voltage
+vsup    vdd     gnd     dc      2
+.dc     temp    -40     125     5
+
+*** control statement
+.control
+run
+plot v(qp1) v(ra1) v(qp2) v(net2)
+plot vid1#branch vid2#branch
+.endc
+.end
+
+```
+
+simulation with ngspice:
+
+<img width="775" height="522" alt="image" src="https://github.com/user-attachments/assets/a46b757e-6d4f-423d-b677-333f2524c40e" />
+
+plot results:
+
+<img width="1228" height="855" alt="image" src="https://github.com/user-attachments/assets/613500f8-4ba6-4539-ae66-17235c999417" />
+
+<img width="1218" height="759" alt="image" src="https://github.com/user-attachments/assets/32a6d3c0-47b4-4176-94de-b23f12b7af80" />
 
 
 
