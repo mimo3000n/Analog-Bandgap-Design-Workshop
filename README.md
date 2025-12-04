@@ -635,19 +635,28 @@ run magic with following command from work-directory:
 
 magic -T /home/mimo3000n/share/pdk/sky130A/libs.tech/magic/sky130A.tech
 
+<img width="951" height="50" alt="image" src="https://github.com/user-attachments/assets/baf8bc5e-a03a-4349-9f09-dd8c4fdb07e6" />
+
+
 load "resbank.mag"
+
+select in magic "File" -> "Open...."
+
+<img width="637" height="507" alt="image" src="https://github.com/user-attachments/assets/f540bd54-2395-4a07-98c0-e304abe2fa09" />
+
+
 
 <img width="1020" height="1345" alt="image" src="https://github.com/user-attachments/assets/31f5d5ee-1351-452a-b88d-4d0550f8408f" />
 
-pfets:
+load "pfets.mag":
 
 <img width="2572" height="1106" alt="image" src="https://github.com/user-attachments/assets/fcc5fd02-cdf0-4002-a928-a7e8f04480c1" />
 
-nfets:
+load nfets.mag:
 
 <img width="2580" height="1108" alt="image" src="https://github.com/user-attachments/assets/876d007e-b3e4-4584-957c-faed931611c7" />
 
-pnp10:
+load pnp10.mag:
 
 <img width="2582" height="1119" alt="image" src="https://github.com/user-attachments/assets/a4edc024-86ce-4352-b66e-373cd69e476a" />
 
@@ -674,6 +683,154 @@ plot results:
 <img width="1178" height="780" alt="image" src="https://github.com/user-attachments/assets/8e81d353-981e-487a-8b2d-4a6065225e60" />
 
 
+-------------------------------------------------------------------------------------
+### used Tools
+
+<details>
+<summary>magic</summary>
+	
+&nbsp;
+
+Overview
+&nbsp;
+
+Magic is a widely-used, open-source VLSI (Very-Large-Scale Integration) layout tool. It's primarily used for designing integrated circuits, particularly at the physical design stage. It's known for its ease of use, its "corner-stitching" data structure that enables efficient editing, and its suitability for educational purposes and smaller design projects. While not as feature-rich as some commercial tools, it's a valuable resource for learning VLSI design and working on smaller-scale integrated circuit projects.
+
+Key Features and Characteristics:
+
+Layout Editor: 
+Magic is primarily a graphical layout editor. It allows users to draw and manipulate geometric shapes representing the different layers of an integrated circuit (e.g., metal, polysilicon, diffusion).
+Corner Stitching: 
+Magic uses a unique data structure called "corner stitching" to represent the layout. This data structure makes it very efficient to perform geometric operations such as finding adjacent polygons and updating the layout after edits. Corner stitching is one of the reasons why Magic is known for its speed and responsiveness, even with large layouts.
+Hierarchical Design: 
+Magic supports hierarchical design, which means you can create complex layouts by combining smaller, reusable cells. This allows you to manage the complexity of large designs.
+Design Rule Checking (DRC): 
+Magic has built-in DRC capabilities. It can check your layout against a set of design rules to ensure that it meets the requirements of the target fabrication process. Violations of the design rules can lead to manufacturing defects.
+Extraction: 
+Magic can extract the electrical parameters (e.g., resistance, capacitance) from your layout. This information can be used for simulation to verify the performance of your circuit.
+Tcl Scripting: 
+Magic is highly scriptable using the Tcl (Tool Command Language). This allows you to automate tasks, customize the tool, and integrate it with other tools in your design flow.
+Open Source: 
+Magic is open-source software, which means it's free to use, distribute, and modify. This makes it a popular choice for educational institutions and hobbyists.
+Strengths:
+
+Ease of Use: Magic is generally considered easier to learn and use than some commercial VLSI layout tools.
+Speed and Responsiveness: Thanks to its corner-stitching data structure, Magic is known for its speed and responsiveness, even with large layouts.
+Educational Value: Magic is widely used in universities and colleges to teach VLSI design principles.
+Customization: The Tcl scripting interface allows for a high degree of customization.
+Open Source: The open-source nature of Magic makes it accessible to everyone.
+Limitations:
+
+Fewer Features: Compared to commercial VLSI layout tools, Magic has fewer advanced features (e.g., automatic routing, advanced placement algorithms).
+Limited Support: As an open-source tool, Magic relies on community support. Commercial tools typically offer dedicated support from the vendor.
+Scalability: While Magic can handle reasonably large layouts, it may not be suitable for the most complex and demanding industrial designs.
+Use Cases:
+
+Educational Purposes: Teaching VLSI design principles.
+Small to Medium-Sized Chip Designs: Designing custom integrated circuits for specific applications.
+Prototyping: Creating quick prototypes of circuit layouts.
+Research: Exploring new layout techniques and design methodologies.
+How it Works (Simplified):
+
+Drawing and Editing: You use the Magic GUI to draw rectangles and polygons representing different layers of the chip. You can use commands to move, copy, rotate, and stretch these shapes.
+Layers: You assign each shape to a specific layer, which corresponds to a particular material or processing step in the fabrication process (e.g., metal1, polysilicon, n-diffusion).
+Connectivity: Magic understands the connectivity of your circuit based on how the shapes overlap and touch each other.
+DRC: You run the DRC tool to check your layout against the design rules. The DRC tool will highlight any violations of the rules.
+Extraction: You run the extraction tool to extract the electrical parameters of your circuit.
+Output: You can generate various output formats from Magic, such as GDSII (a standard format for transferring layout data to foundries).
+Commands (Examples):
+
+Magic uses a text-based command interface in addition to the GUI. Here are some common commands:
+
+box: Create a rectangle.
+paint: Paint a region with a specific layer.
+erase: Erase a region.
+select: Select objects in the layout.
+move: Move selected objects.
+copy: Copy selected objects.
+load: Load a layout from a file.
+save: Save the layout to a file.
+drc check: Run a design rule check.
+Alternatives:
+
+Commercial VLSI layout tools include:
+
+Cadence Virtuoso
+Synopsys Laker
+Mentor Graphics Calibre
+
+</details>
+
+<details>
+<summary>ngspice</summary>
+	
+&nbsp;
+
+Overview
+&nbsp;
+ngspice is a widely used open‑source SPICE-compatible circuit simulator for analog, mixed‑signal and basic digital verification. It provides command‑line and batch operation, interactive waveform plotting, behavioural sources, device model support, and scripting for automated flows. It is commonly used on Linux and can be run on Windows/macOS via ports or compatibility layers.
+
+Strategic value
+- Enables in‑house circuit simulation without license fees, lowering cost of entry and supporting reproducible, version‑controlled analog and mixed‑signal verification flows.
+- Useful for transistor‑level validation (standard cells, I/O circuits), analog IP development, and regression testing in CI pipelines.
+
+Key benefits
+- Cost: no per‑seat licensing costs; suitable for teams needing many simulation instances.
+- Openness & integration: text‑based netlists and outputs integrate well with front‑ends (Xschem, KiCad), automated scripts, and version control.
+- Automation: robust batch and scripting capabilities for regression, parameter sweeps and CI.
+- Feature set: supports standard SPICE elements, behavioural B‑sources, parameterized devices and transient/AC/DC/noise analyses; built‑in plotting and data export (raw files).
+- Community & portability: active user community, frequent updates, runs on common server/CI environments.
+
+Limitations & risks
+- Performance & scalability: for very large circuits or high‑performance requirements, commercial simulators (and specialized tools like Xyce) may be faster or more scalable.
+- Advanced AMS support: support for Verilog‑A/Verilog‑AMS and some advanced device model dialects can be limited or require additional tooling; complex mixed‑signal co‑simulation needs careful validation.
+- PDK compatibility: foundry PDKs and some commercial models may be tuned for specific commercial SPICE variants — validate model compatibility and accuracy before production use.
+- Support model: community and internal expertise drive support; no guaranteed commercial SLA unless paired with third‑party support arrangements.
+- Platform nuances: Windows/macOS use typically requires extra setup (WSL/Cygwin/ports), adding initial effort for non‑Linux teams.
+
+Cost/effort considerations
+- Low direct software cost, but expect investment in:
+  - Validation of models vs. baseline commercial simulators (accuracy tests).
+  - Toolchain integration (front‑end, CI, waveform tools).
+  - Training for engineers on ngspice quirks, scripting, and batch jobs.
+  - Potential development of adapters/automation for PDK or layout handoffs.
+
+Recommended pilot (4–8 weeks)
+- Scope: validate ngspice on representative use cases — e.g., a set of standard cells, an I/O buffer, and one mixed‑signal block.
+- Tasks:
+  1. Install and standardize a stable ngspice version on CI servers.
+  2. Import device models (BSIM/custom models) and run baseline comparisons against a reference simulator on a small set of circuits.
+  3. Create scripted regression tests (transient, AC, DC, noise) and waveform extraction (.measure).
+  4. Integrate with schematic front‑end (Xschem/KiCad) and automate netlist generation.
+  5. Measure runtime, accuracy and stability across corners and temperatures.
+- Metrics:
+  - Simulation accuracy vs. reference (acceptable delta on key metrics).
+  - Throughput: runtime for representative jobs and CI load capacity.
+  - Integration effort (time to automate netlist → run → report).
+  - User feedback on usability and debugging.
+
+Success criteria
+- ngspice reproduces key electrical metrics within agreed tolerances versus baseline tools.
+- Regression tests run automatically and reliably in CI with acceptable runtime.
+- Models and PDK files are compatible or have a documented path to compatibility.
+- Team confidence and a documented support/rollback plan if specific jobs require commercial tools.
+
+Recommendations / next steps
+- Start with a focused pilot as above; include at least one mixed‑signal co‑simulation if your designs need it.
+- Build a model validation suite (unit circuits, corners, temp) to compare against reference results.
+- Automate simulation workflows and store netlists/results in version control and CI.
+- Define escalation: when to use commercial simulators (e.g., failing accuracy or performance thresholds).
+- If needed, evaluate third‑party commercial support or a hybrid flow (ngspice for regression, commercial tools for sign‑off).
+
+</details>
+
+-------------------------------------------------------------------------------------
+### Acknowledgments
+
+- #### Prof. Santunu Sarangi
+- #### Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+
+ 
 
 
 
