@@ -667,35 +667,41 @@ load pnp10.mag:
 ###	top-level layout extraction lvs postlayout simulation Final
 &nbsp;
 
-combine all mag files
+#### combine all mag files
 
+&nbsp;
 <img width="637" height="507" alt="image" src="https://github.com/user-attachments/assets/f056d58c-1448-4cf2-b974-0c4e29c89fdf" />
 
-
+&nbsp;
 <img width="764" height="1041" alt="image" src="https://github.com/user-attachments/assets/25f4f3fc-8424-4cc0-8fef-6fcd34ac9d62" />
 
-how to extract netlist in magic, exec following commands:
+#### how to extract netlist in magic, exec following commands:
 
+``` tcl
 extract all
 exe2sim label on
 exe2sim
 exe2spice scale off
 exe2spice heirarchy off
 exe2spice
+```
 
-
+&nbsp;
 <img width="920" height="653" alt="image" src="https://github.com/user-attachments/assets/2e554987-8c82-4577-bc87-3d4ab6826021" />
 
+&nbsp;
 <img width="602" height="256" alt="image" src="https://github.com/user-attachments/assets/33a24197-9906-42e4-a078-a97779722c35" />
 
-LVS completed:
+#### LVS completed:
 
+&nbsp;
 <img width="808" height="768" alt="image" src="https://github.com/user-attachments/assets/79b30c1f-7741-4c21-97d7-f0dcb24063aa" />
 
+&nbsp;
 <img width="1384" height="721" alt="image" src="https://github.com/user-attachments/assets/045e8e1f-ae90-4656-934a-770d42ab2e53" />
 
 
-
+### End of workshop
 -------------------------------------------------------------------------------------
 ### used Tools
 
