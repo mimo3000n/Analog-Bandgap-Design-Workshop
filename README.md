@@ -196,20 +196,20 @@ The program culminates in the integration of a complete BGR circuit. You will si
 
 ###	CTAT design and prelayout simulation
 <details>
-<summary>component design with spice netlist</summary>
+<summary>CTAT design and prelayout simulation</summary>
 	
 &nbsp;
 <img width="1321" height="744" alt="image" src="https://github.com/user-attachments/assets/45b4bd6f-b38d-4f53-9b47-df7674f0c438" />
 
-<img width="1323" height="747" alt="image" src="https://github.com/user-attachments/assets/b1c0e4de-3288-4a5b-ae6a-57a03e2103e9" />
 &nbsp;
+<img width="1323" height="747" alt="image" src="https://github.com/user-attachments/assets/b1c0e4de-3288-4a5b-ae6a-57a03e2103e9" />
 
 
-Setup of wsl
+#### Setup of wsl
 
 will be documented!!
 
-ctat_voltage_gen.sp spice file
+<ins>ctat_voltage_gen.sp spice file</ins>
 
 ``` spice
 *CTAT Voltage generation with single BJT
