@@ -48,34 +48,45 @@ The program culminates in the integration of a complete BGR circuit. You will si
 </details>
 
 &nbsp;
-### Lec1 Introduction to BGR
+### Introduction to BGR
+<details>
+<summary>Introduction to BGR</summary>
 &nbsp;
 
 &nbsp;
 <img width="1757" height="996" alt="image" src="https://github.com/user-attachments/assets/139681d8-359e-4650-9f64-93c0991b4711" />
 
+&nbsp;
 <img width="1762" height="993" alt="image" src="https://github.com/user-attachments/assets/2df41e7a-adc9-4c0f-a4bb-58194da0bafc" />
 
+&nbsp;
 <img width="1763" height="992" alt="image" src="https://github.com/user-attachments/assets/b0a63ffc-dc83-4d46-932c-fb402ac8f2d2" />
 
+&nbsp;
 <img width="1758" height="994" alt="image" src="https://github.com/user-attachments/assets/c61aaee6-37d1-4b96-9bac-138e447408c1" />
 
+&nbsp;
 <img width="1765" height="993" alt="image" src="https://github.com/user-attachments/assets/d5577235-2a14-43e2-95f1-d1c10d042b22" />
 
+&nbsp;
 <img width="1764" height="994" alt="image" src="https://github.com/user-attachments/assets/be79ea3f-bc41-4fbc-a84c-ba183d9b4905" />
 
+&nbsp;
 <img width="1760" height="988" alt="image" src="https://github.com/user-attachments/assets/017df5db-5b91-44f0-b3f1-b712c541df8e" />
 
-
+&nbsp;
 <img width="1763" height="990" alt="image" src="https://github.com/user-attachments/assets/5f8feb94-6a9d-443e-add0-056b59eb54b1" />
 
+&nbsp;
 <img width="1761" height="987" alt="image" src="https://github.com/user-attachments/assets/87be0849-7ba3-42e7-bc3c-bafd07ccdb18" />
 
+&nbsp;
 <img width="1770" height="992" alt="image" src="https://github.com/user-attachments/assets/a0b89418-c837-4c81-b58d-50ba513ef005" />
-
+&nbsp;
 <img width="1763" height="991" alt="image" src="https://github.com/user-attachments/assets/bc8bdb52-1199-4888-bdfc-afdcc126f4f9" />
+&nbsp;
 
-
+</details>
 
 ### Lec2 CTAT Voltage generation Circuit
 
