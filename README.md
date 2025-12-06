@@ -669,18 +669,31 @@ load pnp10.mag:
 
 combine all mag files
 
+<img width="637" height="507" alt="image" src="https://github.com/user-attachments/assets/f056d58c-1448-4cf2-b974-0c4e29c89fdf" />
+
+
 <img width="764" height="1041" alt="image" src="https://github.com/user-attachments/assets/25f4f3fc-8424-4cc0-8fef-6fcd34ac9d62" />
 
+how to extract netlist in magic, exec following commands:
 
-plot results:
+extract all
+exe2sim label on
+exe2sim
+exe2spice scale off
+exe2spice heirarchy off
+exe2spice
 
-<img width="1311" height="853" alt="image" src="https://github.com/user-attachments/assets/5e22098c-c389-4a3d-86ef-d11b18792df1" />
 
+<img width="920" height="653" alt="image" src="https://github.com/user-attachments/assets/2e554987-8c82-4577-bc87-3d4ab6826021" />
 
-<img width="1178" height="780" alt="image" src="https://github.com/user-attachments/assets/fc74ae69-8448-4501-8944-2b6083c379c0" />
+<img width="602" height="256" alt="image" src="https://github.com/user-attachments/assets/33a24197-9906-42e4-a078-a97779722c35" />
 
+LVS completed:
 
-<img width="1178" height="780" alt="image" src="https://github.com/user-attachments/assets/8e81d353-981e-487a-8b2d-4a6065225e60" />
+<img width="808" height="768" alt="image" src="https://github.com/user-attachments/assets/79b30c1f-7741-4c21-97d7-f0dcb24063aa" />
+
+<img width="1384" height="721" alt="image" src="https://github.com/user-attachments/assets/045e8e1f-ae90-4656-934a-770d42ab2e53" />
+
 
 
 -------------------------------------------------------------------------------------
