@@ -20,7 +20,9 @@ The program culminates in the integration of a complete BGR circuit. You will si
 ## Bandgap design theory
 
 &nbsp;
-### Lec0 Opening Lecture
+### Opening Lecture
+<details>
+<summary>Opening Lecture</summary>
 &nbsp;
 
 <img width="1766" height="954" alt="image" src="https://github.com/user-attachments/assets/e2e503f6-2764-4919-9b25-807bd5dd46bc" />
@@ -42,6 +44,8 @@ The program culminates in the integration of a complete BGR circuit. You will si
 &nbsp;
 <img width="1761" height="951" alt="image" src="https://github.com/user-attachments/assets/bcd97b3a-e6f6-40c8-b816-d42b92e747f1" />
 &nbsp;
+
+</details>
 
 &nbsp;
 ### Lec1 Introduction to BGR
