@@ -82,27 +82,51 @@ The program culminates in the integration of a complete BGR circuit. You will si
 
 &nbsp;
 <img width="1770" height="992" alt="image" src="https://github.com/user-attachments/assets/a0b89418-c837-4c81-b58d-50ba513ef005" />
+
 &nbsp;
 <img width="1763" height="991" alt="image" src="https://github.com/user-attachments/assets/bc8bdb52-1199-4888-bdfc-afdcc126f4f9" />
 &nbsp;
 
 </details>
 
-### Lec2 CTAT Voltage generation Circuit
+### CTAT Voltage generation Circuit
+<details>
+<summary>CTAT Voltage generation Circuit</summary>
 
-
+&nbsp;
 <img width="1763" height="992" alt="image" src="https://github.com/user-attachments/assets/b34a1680-11c8-4305-b13d-5bf49f73476c" />
 
+</details>
 
-###	Lec3 PTAT Voltage generation Circuit
+###	PTAT Voltage generation Circuit
+<details>
+<summary>PTAT Voltage generation Circuit</summary>
 
-###	Lec4 Biased Current Mirror Circuit
+</details>
 
-###	Lec5 Reference Voltage branch Circuit
+###	Biased Current Mirror Circuit
+<details>
+<summary>Biased Current Mirror Circuit</summary>
 
-###	Lec6 Start-up Circuit
+</details>
 
-###	Lec7 Complete BGR Circuit
+###	Reference Voltage branch Circuit
+<details>
+<summary>Reference Voltage branch Circuit</summary>
+
+</details>
+
+###	Start-up Circuit
+<details>
+<summaryStart-up Circuit</summary>
+
+</details>
+
+###	Complete BGR Circuit
+<details>
+<summary>Complete BGR Circuit</summary>
+
+</details>
 
 ------------------------------------------------------------------------------------------
 ## Bandgap design labs using Sky130	
