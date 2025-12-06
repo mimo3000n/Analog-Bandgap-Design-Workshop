@@ -133,56 +133,72 @@ The program culminates in the integration of a complete BGR circuit. You will si
 
 &nbsp;
 ### Tools and PDK Setup
+<details>
+<summary>Tools and PDK Setup</summary>
+	
 &nbsp;
-
 <img width="1762" height="990" alt="image" src="https://github.com/user-attachments/assets/e16c1a3c-b312-42d8-990e-1efc7ade5e7a" />
 
+&nbsp;
 <img width="796" height="266" alt="image" src="https://github.com/user-attachments/assets/4a256ace-f221-4ea2-bb62-210e1114b6b7" />
 
+&nbsp;
 <img width="740" height="237" alt="image" src="https://github.com/user-attachments/assets/4bc6d88e-6f90-40fe-a616-fc08845d2620" />
 
+&nbsp;
 <img width="1280" height="809" alt="image" src="https://github.com/user-attachments/assets/4c32b6ea-ee5a-42fe-a6fe-7780d854a929" />
 
+&nbsp;
 <img width="1284" height="806" alt="image" src="https://github.com/user-attachments/assets/21b44d01-01c7-4fcb-949f-e1359923ad6d" />
 
 
-
+</details>
 
 ### Design spec, Device data, Design Step
-&nbsp;
+<details>
+<summary>Design spec, Device data, Design Step</summary>
 
+&nbsp;
 <img width="1760" height="991" alt="image" src="https://github.com/user-attachments/assets/02038e43-d99b-4093-af8e-918d8ca8a528" />
 
+&nbsp;
 <img width="1761" height="990" alt="image" src="https://github.com/user-attachments/assets/018b9e83-fbc4-4177-8d52-b9e577490f8b" />
 
+&nbsp;
 <img width="1762" height="994" alt="image" src="https://github.com/user-attachments/assets/9f798c33-87c6-41f5-8348-80e5c8340347" />
 
+&nbsp;
 <img width="1763" height="991" alt="image" src="https://github.com/user-attachments/assets/48005fcc-6133-428d-9209-1a737265b151" />
 
+&nbsp;
 <img width="1766" height="991" alt="image" src="https://github.com/user-attachments/assets/1545896a-b736-4e88-b52b-bb4f7d8e647d" />
 
+&nbsp;
 <img width="1765" height="992" alt="image" src="https://github.com/user-attachments/assets/9eedb5d6-0045-4f10-9d07-9e9c264bbf83" />
 
+&nbsp;
 <img width="1766" height="990" alt="image" src="https://github.com/user-attachments/assets/d6d51041-4e75-4426-92cf-5baa24476f1f" />
 
+&nbsp;
 <img width="1765" height="991" alt="image" src="https://github.com/user-attachments/assets/26c78286-f3d4-448a-bbbd-614f9698fd29" />
 
 
-
-
-
-
-
-
-
+</details>
 
 
 ###	component design with spice netlist
+<details>
+<summary>component design with spice netlist</summary>
+	
 &nbsp;
+
+</details>
 
 ###	CTAT design and prelayout simulation
+<details>
+<summary>component design with spice netlist</summary>
+	
 &nbsp;
-
 <img width="1321" height="744" alt="image" src="https://github.com/user-attachments/assets/45b4bd6f-b38d-4f53-9b47-df7674f0c438" />
 
 <img width="1323" height="747" alt="image" src="https://github.com/user-attachments/assets/b1c0e4de-3288-4a5b-ae6a-57a03e2103e9" />
@@ -265,7 +281,7 @@ plot result:
 
 
 
-
+</details>
 
 
 
