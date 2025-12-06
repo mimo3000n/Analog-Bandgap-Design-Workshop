@@ -286,11 +286,10 @@ plot v(ctat_op)
 </details>
 
 
-
-
-
-
 ###	PTAT design and prelayout simulation
+<details>
+<summary>PTAT design and prelayout simulation</summary>
+	
 &nbsp;
 
 next we do simulation on following ciruit.
@@ -409,7 +408,12 @@ plot result:
 <img width="1223" height="938" alt="image" src="https://github.com/user-attachments/assets/484c01dc-b80c-4291-a099-8f07d53a1f58" />
 
 
+</details>
+
 ###	BGR (ideal) design and prelayout simulation
+<details>
+<summary>BGR (ideal) design and prelayout simulation</summary>
+	
 &nbsp;
 
 next we simulate below circuit
@@ -508,8 +512,12 @@ plot results:
 &nbsp;
 <img width="1370" height="886" alt="image" src="https://github.com/user-attachments/assets/029849cd-3be3-4edd-a4ca-5ec7731aa84f" />
 
+</details>
 
 ###	Complete BGR design and prelayout simulation
+<details>
+<summary>Complete BGR design and prelayout simulation</summary>
+	
 &nbsp;
 
 next we are using bgr_lvt_rpolyh_3p40_ss.sp spice file for simulation of complet BGR design
@@ -698,6 +706,9 @@ plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 .end
 
 ```
+
+</details>
+
 
 ###	Detailed Startup circuit Simulation
 &nbsp;
