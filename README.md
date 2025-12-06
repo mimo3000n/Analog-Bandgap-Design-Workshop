@@ -236,22 +236,26 @@ plot v(qp1)
 
 ```
 
-runing spice simulation with following command:
+#### runing spice simulation with following command:
 
-ngspice ctat_voltage_gen.sp
+<ins>gspice ctat_voltage_gen.sp</ins>
 
+&nbsp;
 <img width="792" height="502" alt="image" src="https://github.com/user-attachments/assets/6976cefe-d87b-4e59-979e-f6f49370966c" />
 
-plot result
+<ins>plot result</ins>
 
+&nbsp;
 <img width="1137" height="748" alt="image" src="https://github.com/user-attachments/assets/741347ac-6e7c-4956-9712-a497049bca6b" />
 
 
-slope:
+<ins>slope</ins>
 
+&nbsp;
 <img width="622" height="115" alt="image" src="https://github.com/user-attachments/assets/8b8ea151-3836-4772-b885-4c81d4795364" />
 
-CTAT Voltage generation with different current source values
+
+#### CTAT Voltage generation with different current source values
 
 ``` spice
 *CTAT_ckt Voltage generation with different current source values
@@ -268,17 +272,15 @@ plot v(ctat_op)
 
 ```
 
-simulation with ngspice:
+<ins>simulation with ngspice:</ins>
 
+&nbsp;
 <img width="781" height="483" alt="image" src="https://github.com/user-attachments/assets/aa25a86f-4b6c-424f-b8ae-7271c7d54795" />
 
-plot result:
+<ins>plot result:</ins>
 
+&nbsp;
 <img width="1277" height="956" alt="image" src="https://github.com/user-attachments/assets/e02be5cc-3c57-4998-bafd-218b8ac0a6a0" />
-
-
-
-
 
 
 </details>
@@ -293,6 +295,7 @@ plot result:
 
 next we do simulation on following ciruit.
 
+&nbsp;
 <img width="880" height="499" alt="image" src="https://github.com/user-attachments/assets/16eaffaf-cdfc-4ecc-8f57-75842756158b" />
 
 ``` spice
@@ -338,12 +341,15 @@ plot vid1#branch vid2#branch
 
 simulation with ngspice:
 
+&nbsp;
 <img width="775" height="522" alt="image" src="https://github.com/user-attachments/assets/a46b757e-6d4f-423d-b677-333f2524c40e" />
 
 plot results:
 
+&nbsp;
 <img width="1228" height="855" alt="image" src="https://github.com/user-attachments/assets/613500f8-4ba6-4539-ae66-17235c999417" />
 
+&nbsp;
 <img width="1218" height="759" alt="image" src="https://github.com/user-attachments/assets/32a6d3c0-47b4-4176-94de-b23f12b7af80" />
 
 
@@ -351,26 +357,32 @@ plot v(qp1) & v(ra1) and see that there is no difference alsoslop is the same
 
 ngspice command: plot v(qp1) v(ra1)
 
+&nbsp;
 <img width="411" height="57" alt="image" src="https://github.com/user-attachments/assets/baf87960-f011-4f18-8c39-03b196b4503b" />
 
 plot result: 
 
+&nbsp;
 <img width="1169" height="819" alt="image" src="https://github.com/user-attachments/assets/ee67f335-be0b-4ed6-bca8-c04c95bff6a7" />
 
 now we run "plot v(qp2) v(ra1)
 
+&nbsp;
 <img width="325" height="56" alt="image" src="https://github.com/user-attachments/assets/8aec85ca-8d97-4e8f-bc96-e682b10599b1" />
 
 plot result:
 
+&nbsp;
 <img width="1300" height="855" alt="image" src="https://github.com/user-attachments/assets/036a6719-b6bc-4c45-9efb-f7b6c458a409" />
 
 now let add difference between v(ra1)-v(qp2)
 
+&nbsp;
 <img width="510" height="44" alt="image" src="https://github.com/user-attachments/assets/85ef64dd-2336-41bb-b377-894ad67ebe62" />
 
 plot result:
 
+&nbsp;
 <img width="1295" height="847" alt="image" src="https://github.com/user-attachments/assets/65c9c63b-57b8-4785-af9b-2ba3c75d5c5e" />
 
 
@@ -378,19 +390,22 @@ meassure the slope of v(ra1)-v(qp2)
 
 plot result:
 
+&nbsp;
 <img width="1524" height="993" alt="image" src="https://github.com/user-attachments/assets/afd4a21a-ebe9-479a-a04b-18585f7186c0" />
 
-
+&nbsp;
 <img width="575" height="95" alt="image" src="https://github.com/user-attachments/assets/2477f686-c514-487a-88cf-dd843c8e16f3" />
 
 now we check the current
 
 ngspice command: plot vid1#branch vid2#branch
 
+&nbsp;
 <img width="335" height="50" alt="image" src="https://github.com/user-attachments/assets/07f28e88-e8d4-4f44-bbe6-5784b6137a4c" />
 
 plot result:
 
+&nbsp;
 <img width="1223" height="938" alt="image" src="https://github.com/user-attachments/assets/484c01dc-b80c-4291-a099-8f07d53a1f58" />
 
 
@@ -399,6 +414,7 @@ plot result:
 
 next we simulate below circuit
 
+&nbsp;
 <img width="1119" height="732" alt="image" src="https://github.com/user-attachments/assets/8ed686a9-4c21-4c08-958f-c2c1549fbd47" />
 
 
@@ -480,14 +496,16 @@ plot v(ref)
 
 run simulation with ngspice:
 
+&nbsp;
 <img width="804" height="520" alt="image" src="https://github.com/user-attachments/assets/1bd61297-97ff-4cc5-bd2b-abbeefd0a95e" />
 
 
 plot results:
 
+&nbsp;
 <img width="1208" height="774" alt="image" src="https://github.com/user-attachments/assets/eaa7bb01-71cb-4ac7-8ca7-4645d849c5da" />
 
-
+&nbsp;
 <img width="1370" height="886" alt="image" src="https://github.com/user-attachments/assets/029849cd-3be3-4edd-a4ca-5ec7731aa84f" />
 
 
@@ -580,18 +598,21 @@ plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 
 run spice simulation:
 
+&nbsp;
 <img width="865" height="486" alt="image" src="https://github.com/user-attachments/assets/64abcf3f-6b68-4f1e-8fa8-770f686d6c2d" />
 
 plot results:
 
+&nbsp;
 <img width="1473" height="868" alt="image" src="https://github.com/user-attachments/assets/c42d96a0-d348-4823-8fc0-00ce10730f7d" />
 
-
+&nbsp;
 <img width="1351" height="864" alt="image" src="https://github.com/user-attachments/assets/44fb2971-767e-48e7-8699-a4f888925f6c" />
 
 
 plot v(vref)
 
+&nbsp;
 <img width="1303" height="919" alt="image" src="https://github.com/user-attachments/assets/5889fb66-2c77-4e6e-b4a1-42b86742638f" />
 
 
@@ -690,6 +711,7 @@ run magic with following command from work-directory:
 
 magic -T /home/mimo3000n/share/pdk/sky130A/libs.tech/magic/sky130A.tech
 
+&nbsp;
 <img width="951" height="50" alt="image" src="https://github.com/user-attachments/assets/baf8bc5e-a03a-4349-9f09-dd8c4fdb07e6" />
 
 
@@ -697,22 +719,26 @@ load "resbank.mag"
 
 select in magic "File" -> "Open...."
 
+&nbsp;
 <img width="637" height="507" alt="image" src="https://github.com/user-attachments/assets/f540bd54-2395-4a07-98c0-e304abe2fa09" />
 
 
-
+&nbsp;
 <img width="1020" height="1345" alt="image" src="https://github.com/user-attachments/assets/31f5d5ee-1351-452a-b88d-4d0550f8408f" />
 
 load "pfets.mag":
 
+&nbsp;
 <img width="2572" height="1106" alt="image" src="https://github.com/user-attachments/assets/fcc5fd02-cdf0-4002-a928-a7e8f04480c1" />
 
 load nfets.mag:
 
+&nbsp;
 <img width="2580" height="1108" alt="image" src="https://github.com/user-attachments/assets/876d007e-b3e4-4584-957c-faed931611c7" />
 
 load pnp10.mag:
 
+&nbsp;
 <img width="2582" height="1119" alt="image" src="https://github.com/user-attachments/assets/a4edc024-86ce-4352-b66e-373cd69e476a" />
 
 
