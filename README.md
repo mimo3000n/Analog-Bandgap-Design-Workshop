@@ -709,9 +709,15 @@ plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 
 
 ###	Detailed Startup circuit Simulation
-&nbsp;
+<details>
+<summary>Detailed Startup circuit Simulation</summary>
+
+</details>
 
 ###	Layout of the components
+<details>
+<summary>Layout of the components</summary>
+	
 &nbsp;
 
 transfer mag files into work-directory
@@ -751,10 +757,13 @@ load pnp10.mag:
 <img width="2582" height="1119" alt="image" src="https://github.com/user-attachments/assets/a4edc024-86ce-4352-b66e-373cd69e476a" />
 
 
-
+top-level layout extraction lvs postlayout simulation Final
 
 
 ###	top-level layout extraction lvs postlayout simulation Final
+<details>
+<summary>top-level layout extraction lvs postlayout simulation Final</summary>
+	
 &nbsp;
 
 #### combine all mag files
@@ -790,7 +799,9 @@ exe2spice
 &nbsp;
 <img width="1384" height="721" alt="image" src="https://github.com/user-attachments/assets/045e8e1f-ae90-4656-934a-770d42ab2e53" />
 
+</details>
 
+-------------------------------------------------------------------------------------
 ### End of workshop
 -------------------------------------------------------------------------------------
 ### used Tools
