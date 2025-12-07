@@ -720,9 +720,9 @@ plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 	
 &nbsp;
 
-transfer mag files into work-directory
+transfer mag files from reference repo "https://github.com/vsdip/vsd-bandgap"  into work-directory
 
-run magic with following command from work-directory:
+**run magic with following command from work-directory:**
 
 magic -T /home/mimo3000n/share/pdk/sky130A/libs.tech/magic/sky130A.tech
 
