@@ -17,9 +17,9 @@ You will begin at the component level with CTAT and PTAT voltage generation circ
 The program culminates in the integration of a complete BGR circuit. You will simulate and analyze the final output for temperature stability (tempco), line regulation (PSRR), and load regulation. Guided by detailed specifications, you will run deterministic PVT corners (Process, Voltage, Temperature) to sign-off on the design’s robustness. Graduates leave with a coherent portfolio: annotated schematics, simulation results, and a comprehensive engineering report that demonstrates readiness for analog and mixed-signal design roles.
 
 ------------------------------------------------------------------------
-## Bandgap design theory
+## Module 1 - Bandgap design theory
 
-&nbsp;
+
 ### Opening Lecture
 <details>
 <summary>Opening Lecture</summary>
@@ -47,7 +47,6 @@ The program culminates in the integration of a complete BGR circuit. You will si
 
 </details>
 
-&nbsp;
 ### Introduction to BGR
 <details>
 <summary>Introduction to BGR</summary>
@@ -129,7 +128,7 @@ The program culminates in the integration of a complete BGR circuit. You will si
 </details>
 
 ------------------------------------------------------------------------------------------
-## Bandgap design labs using Sky130	
+## Module 2 - Bandgap design labs using Sky130	
 
 &nbsp;
 ### Tools and PDK Setup
