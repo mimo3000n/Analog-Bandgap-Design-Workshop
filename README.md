@@ -336,7 +336,7 @@ plot vid1#branch vid2#branch
 
 ```
 
-simulation with ngspice:
+**simulation with ngspice:**
 
 &nbsp;
 <img width="775" height="522" alt="image" src="https://github.com/user-attachments/assets/a46b757e-6d4f-423d-b677-333f2524c40e" />
@@ -350,7 +350,7 @@ plot results:
 <img width="1218" height="759" alt="image" src="https://github.com/user-attachments/assets/32a6d3c0-47b4-4176-94de-b23f12b7af80" />
 
 
-plot v(qp1) & v(ra1) and see that there is no difference alsoslop is the same
+**plot v(qp1) & v(ra1) and see that there is no difference alsoslop is the same**
 
 ngspice command: plot v(qp1) v(ra1)
 
@@ -362,7 +362,7 @@ plot result:
 &nbsp;
 <img width="1169" height="819" alt="image" src="https://github.com/user-attachments/assets/ee67f335-be0b-4ed6-bca8-c04c95bff6a7" />
 
-now we run "plot v(qp2) v(ra1)
+**now we run "plot v(qp2) v(ra1)*
 
 &nbsp;
 <img width="325" height="56" alt="image" src="https://github.com/user-attachments/assets/8aec85ca-8d97-4e8f-bc96-e682b10599b1" />
@@ -372,7 +372,7 @@ plot result:
 &nbsp;
 <img width="1300" height="855" alt="image" src="https://github.com/user-attachments/assets/036a6719-b6bc-4c45-9efb-f7b6c458a409" />
 
-now let add difference between v(ra1)-v(qp2)
+**now let add difference between v(ra1)-v(qp2)**
 
 &nbsp;
 <img width="510" height="44" alt="image" src="https://github.com/user-attachments/assets/85ef64dd-2336-41bb-b377-894ad67ebe62" />
@@ -383,7 +383,7 @@ plot result:
 <img width="1295" height="847" alt="image" src="https://github.com/user-attachments/assets/65c9c63b-57b8-4785-af9b-2ba3c75d5c5e" />
 
 
-meassure the slope of v(ra1)-v(qp2)
+**meassure the slope of v(ra1)-v(qp2)**
 
 plot result:
 
@@ -393,7 +393,7 @@ plot result:
 &nbsp;
 <img width="575" height="95" alt="image" src="https://github.com/user-attachments/assets/2477f686-c514-487a-88cf-dd843c8e16f3" />
 
-now we check the current
+**now we check the current**
 
 ngspice command: plot vid1#branch vid2#branch
 
@@ -414,13 +414,13 @@ plot result:
 	
 &nbsp;
 
-next we simulate below circuit
+**next we simulate below circuit*
 
 &nbsp;
 <img width="1119" height="732" alt="image" src="https://github.com/user-attachments/assets/8ed686a9-4c21-4c08-958f-c2c1549fbd47" />
 
 
-netlist look like this:
+**netlist look like this:**
 
 ``` spice
 
@@ -496,7 +496,7 @@ plot v(ref)
 .end
 ```
 
-run simulation with ngspice:
+**run simulation with ngspice:**
 
 &nbsp;
 <img width="804" height="520" alt="image" src="https://github.com/user-attachments/assets/1bd61297-97ff-4cc5-bd2b-abbeefd0a95e" />
@@ -730,7 +730,7 @@ magic -T /home/mimo3000n/share/pdk/sky130A/libs.tech/magic/sky130A.tech
 <img width="951" height="50" alt="image" src="https://github.com/user-attachments/assets/baf8bc5e-a03a-4349-9f09-dd8c4fdb07e6" />
 
 
-load "resbank.mag"
+<ins>load "resbank.mag"</ins>
 
 select in magic "File" -> "Open...."
 
@@ -741,24 +741,22 @@ select in magic "File" -> "Open...."
 &nbsp;
 <img width="1020" height="1345" alt="image" src="https://github.com/user-attachments/assets/31f5d5ee-1351-452a-b88d-4d0550f8408f" />
 
-load "pfets.mag":
+<ins>load "pfets.mag":</ins>
 
 &nbsp;
 <img width="2572" height="1106" alt="image" src="https://github.com/user-attachments/assets/fcc5fd02-cdf0-4002-a928-a7e8f04480c1" />
 
-load nfets.mag:
+<ins>load nfets.mag:</ins>
 
 &nbsp;
 <img width="2580" height="1108" alt="image" src="https://github.com/user-attachments/assets/876d007e-b3e4-4584-957c-faed931611c7" />
 
-load pnp10.mag:
+<ins>load pnp10.mag:</ins>
 
 &nbsp;
 <img width="2582" height="1119" alt="image" src="https://github.com/user-attachments/assets/a4edc024-86ce-4352-b66e-373cd69e476a" />
 
-
-top-level layout extraction lvs postlayout simulation Final
-
+</details>
 
 ###	top-level layout extraction lvs postlayout simulation Final
 <details>
