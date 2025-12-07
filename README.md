@@ -429,7 +429,7 @@ plot results:
 <img width="1218" height="759" alt="image" src="https://github.com/user-attachments/assets/32a6d3c0-47b4-4176-94de-b23f12b7af80" />
 
 
-**plot v(qp1) & v(ra1) and see that there is no difference alsoslop is the same**
+**plot v(qp1) & v(ra1) and see that there is no difference also slope is the same**
 
 ngspice command: plot v(qp1) v(ra1)
 
@@ -886,6 +886,26 @@ plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 
 &nbsp;
 <img width="1247" height="953" alt="image" src="https://github.com/user-attachments/assets/bb1219eb-1e9f-40bf-8eda-ef3ff74f6714" />
+
+<ins>plot v(vdd) v(net2) v(net1)</ins>
+
+&nbsp;
+<img width="1251" height="864" alt="image" src="https://github.com/user-attachments/assets/f9964f56-aa49-447e-8fee-b73f0f075752" />
+
+<ins>plot v(vdd) v(net2) v(net6)</ins>
+
+&nbsp;
+<img width="1168" height="847" alt="image" src="https://github.com/user-attachments/assets/3932101b-9a1e-4646-9dbc-125c02cd6771" />
+
+<ins>plot vid4#branch</ins>
+
+&nbsp;
+<img width="1478" height="903" alt="image" src="https://github.com/user-attachments/assets/175bcc38-9161-477a-9ee2-114df0faa55b" />
+
+<ins>plot vid5#branch</ins>
+
+&nbsp;
+<img width="1397" height="933" alt="image" src="https://github.com/user-attachments/assets/38e0d7aa-fb03-47c4-a20f-1967538632e5" />
 
 
 </details>
