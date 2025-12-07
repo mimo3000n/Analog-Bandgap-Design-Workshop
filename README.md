@@ -130,7 +130,6 @@ The program culminates in the integration of a complete BGR circuit. You will si
 ------------------------------------------------------------------------------------------
 ## Module 2 - Bandgap design labs using Sky130	
 
-&nbsp;
 ### Tools and PDK Setup
 <details>
 <summary>Tools and PDK Setup</summary>
