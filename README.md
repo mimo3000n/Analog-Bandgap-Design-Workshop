@@ -205,7 +205,86 @@ The program culminates in the integration of a complete BGR circuit. You will si
 
 #### Setup of wsl
 
-will be documented!!
+due to thefact that i have troubles using github codespace in context with ngspice. Prof. Santunu Sarangi using wsl & Ubunthu 24.04
+
+- If you have a previous WSL installed without your knowledge or, you've installed in from the Microsoft Store, it's best you uninstall it using the Windows "Add/remove Programs" app and/or wsl --uninstall
+- Open PowerShell or Windows Command Prompt in ADMINISTRATOR mode by right-clicking and selecting "Run as administrator"
+- In the PowerShell type wsl --list --online. This will list all the available distributions online.
+- To install a particular distribution (Distro) say Ubuntu-24.04 (The name has to be exactly as printed in the above command):
+  - wsl --install -d Ubuntu-24.04
+- It's important to update the WSL now by typing the following in the Powershell:
+	- wsl --update
+- And shut it down:
+	- wsl --shutdown. Note: it will automatically start when the WSL distro selected from the Windows menu.
+ - 
+------------------------------------------------------------------------------------
+#### Launching Ubuntu 24.04.
+
+Update the system
+
+``` bash
+sudo apt update && sudo apt upgrade -y
+```
+
+Clone the Github Repository
+
+``` bash
+cd ~
+git clone https://github.com/silicon-vlsi/SI-2025-AnalogIC.git
+```
+
+Copy & make install scripts executable
+
+``` bash
+cp ~/SI-2025-AnalogIC/install*.sh .
+chmod +x install*.sh
+``
+
+
+Install dependencies & EDA tools
+
+``` bash
+./install-libs.sh
+./install-eda.sh
+```
+
+Add EDA environment variables
+
+``` bash
+cat ~/SI-2025-AnalogIC/bashrc-eda >> ~/.bashrc
+source ~/.bashrc
+```
+
+Setup Xschem initialization
+
+``` bash
+cp ~/share/xschemrc ~/.xschem/xschemrc
+```
+
+Then type this command:
+
+``` bash
+tree -L 2
+```
+
+Directory Structure after installation should look like this:
+
+``` bash
+share
+└── pdk
+cad
+├── eda-magic
+├── eda-netgen
+├── eda-ngspice
+└── eda-xschem
+work
+└── xschem
+.xschem/
+└── simulations
+```
+
+now we can run ngspice analysis for workshop
+ ---------------------------------------------------------------------------------------------------------
 
 <ins>ctat_voltage_gen.sp spice file</ins>
 
